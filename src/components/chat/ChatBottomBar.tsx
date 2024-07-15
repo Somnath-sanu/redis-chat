@@ -56,6 +56,10 @@ const ChatBottomBar = () => {
 
   const { mutate: sendMessage, isPending } = useMutation({
     mutationFn: sendMessageAction,
+    onSuccess: () =>
+      queryClient.invalidateQueries({
+        queryKey: ["messages", selectedUser?.id],
+      }),
   });
 
   const handleSendMessage = () => {

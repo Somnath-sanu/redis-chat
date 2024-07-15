@@ -11,9 +11,7 @@ async function getUsers() {
   const userKeys: string[] = [];
   let cursor = "0";
 
-  console.log({
-    userKeys,
-  });
+  
 
   do {
     const [nextCursor, keys] = await redis.scan(cursor, {
@@ -22,10 +20,6 @@ async function getUsers() {
       count: 100,
     });
 
-    console.log({
-      nextCursor,
-      keys,
-    });
 
     cursor = nextCursor;
 
@@ -38,10 +32,6 @@ async function getUsers() {
   const pipeline = redis.pipeline();
   userKeys.forEach((key) => pipeline.hgetall(key));
   const results = (await pipeline.exec()) as User[];
-
-  console.log({
-    results,
-  });
 
   const users: User[] = [];
   for (const user of results) {

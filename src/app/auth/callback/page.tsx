@@ -11,9 +11,9 @@ const Page = () => {
     queryFn: async () => await checkAuthStatus(),
   });
 
-  if (data?.user) {
-    console.log(data?.user);
-  }
+  // if (data?.user) {
+  //   console.log(data?.user);
+  // }
   if (data?.success) router.push("/");
 
   return (
