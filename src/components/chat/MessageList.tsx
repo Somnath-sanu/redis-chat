@@ -22,7 +22,7 @@ const MessageList = () => {
       }
     },
     enabled: !!selectedUser && !!currentUser && !isUserLoading,
-    refetchInterval: 1000,
+    
   });
 
   //Scroll to the bottom of the message container when new messages are added
