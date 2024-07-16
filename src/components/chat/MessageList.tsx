@@ -22,7 +22,7 @@ const MessageList = () => {
       }
     },
     enabled: !!selectedUser && !!currentUser && !isUserLoading,
-    
+    refetchInterval: 1000,
   });
 
   //Scroll to the bottom of the message container when new messages are added
@@ -78,7 +78,7 @@ const MessageList = () => {
                   </Avatar>
                 )}
                 {message.messageType === "text" ? (
-                  <span className="bg-accent p-3 rounded-md max-w-xs">
+                  <span className="bg-accent p-3 rounded-md max-w-xs text-wrap break-words whitespace-pre-wrap break-all">
                     {message.content}
                   </span>
                 ) : (
