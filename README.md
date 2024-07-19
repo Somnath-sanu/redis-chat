@@ -1,8 +1,6 @@
-
 # REDIS CHAT APP
 
 Redis Chat App is a real-time messaging application built with Next.js, TypeScript, Tailwind CSS, and integrated with Upstash Redis. It features authentication, a responsive UI with light and dark mode options, notification sounds, satisfying typing effects, and support for image uploads.
-
 
 ## Features
 
@@ -14,14 +12,15 @@ Redis Chat App is a real-time messaging application built with Next.js, TypeScri
 - ⌨️ Satisfying Typing Effects: Realistic typing animations for a natural chat experience.
 - Learn About Redis Data Types: Explore Redis data structures used for efficient data handling.
 - Image Uploads: Share images within your chats.
--  Integration with Upstash Redis: Utilizes Upstash Redis for scalable and reliable chat functionality.
--  Awesome Landing Page: Welcoming and informative landing page to introduce the app.
+- Integration with Upstash Redis: Utilizes Upstash Redis for scalable and reliable chat functionality.
+- Awesome Landing Page: Welcoming and informative landing page to introduce the app.
+
 ### Tech Stack
+
 - Frontend: Next.js 14, TypeScript, Tailwind CSS
 - Backend: Upstash Redis
 - State Management: Tenstack Query (React Query)
 - Real-Time Updates: Pusher (or Redis Pub/Sub)
-
 
 ## Installation
 
@@ -31,15 +30,16 @@ Redis Chat App is a real-time messaging application built with Next.js, TypeScri
  git clone https://github.com/Somnath-sanu/redis-chat.git
  cd redis-chat
 ```
+
 - Install dependencies:
 
 ```bash
  npm install
 ```
+
 - Set up environment variables:
 - Run the app:
-    
+
 ## Contributing
 
 Contributions are welcome! Please follow our contribution guidelines.
-
